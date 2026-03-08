@@ -21,6 +21,12 @@ A six-pillar maturity model for assessing organisational AI competence, designed
 | [STANDARD.md](STANDARD.md) | Complete maturity model with pillar definitions, indicators, and scoring methodology |
 | [ARTICLE4-MAPPING.md](ARTICLE4-MAPPING.md) | Line-by-line mapping of EU AI Act Article 4 to the six pillars |
 
+## Live Resources
+
+- **[Research: Assessment Maturity Model](https://twinladder.ai/en/research/assessment-maturity-model)** — Full research page with methodology, competitive landscape analysis, and pillar breakdowns
+- **[Competitive Landscape Analysis](https://twinladder.ai/en/research/assessment-maturity-model#competitive-landscape)** — Positioning against 18 existing frameworks
+- **[Blog: The Article 4 Compliance Floor](https://twinladder.ai/en/blog/article-4-compliance-floor-52)** — Why the compliance floor sits at approximately score 52
+
 ## Why this standard?
 
 No existing framework is simultaneously:
@@ -54,7 +60,7 @@ This standard is maintained by [Twin Ladder](https://twinladder.ai) as permanent
 Twin Ladder Assessment Maturity Model v1.0.0
 Authors: Twin Ladder Research
 License: CC BY-SA 4.0
-URL: https://github.com/Alex-Blumentals/assessment-maturity-model
+URL: https://github.com/twinladder/assessment-maturity-model
 ```
 
 ---

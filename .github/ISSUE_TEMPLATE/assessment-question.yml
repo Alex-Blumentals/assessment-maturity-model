@@ -1,0 +1,53 @@
+name: Assessment Question
+description: Propose a new assessment question for the scoring rubric
+title: "[Question] "
+labels: ["assessment-question"]
+body:
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Target Pillar
+      description: Which pillar should this question assess?
+      options:
+        - Awareness
+        - Policy & Data Protection
+        - Training
+        - Tools
+        - Evidence
+        - Governance
+    validations:
+      required: true
+  - type: textarea
+    id: question-text
+    attributes:
+      label: Proposed Question
+      description: Write the assessment question as it would appear in the rubric
+    validations:
+      required: true
+  - type: textarea
+    id: scoring-guidance
+    attributes:
+      label: Scoring Guidance
+      description: How should responses be scored across the four maturity levels?
+      placeholder: |
+        Exploring (0-25): ...
+        Developing (26-50): ...
+        Implementing (51-75): ...
+        Optimizing (76-100): ...
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why is this question needed? What gap in the current rubric does it address?
+    validations:
+      required: true
+  - type: textarea
+    id: article4-mapping
+    attributes:
+      label: Article 4 Mapping
+      description: Which operative phrase(s) of Article 4 does this question help assess?
+      placeholder: "e.g., 'sufficient level of AI literacy' and 'context in which AI systems are to be used'"
+    validations:
+      required: false

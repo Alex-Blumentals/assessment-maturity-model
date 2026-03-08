@@ -1,0 +1,63 @@
+name: Indicator Feedback
+description: Suggest a change to a maturity indicator (unclear, missing, or misplaced)
+title: "[Indicator] "
+labels: ["indicator-feedback"]
+body:
+  - type: dropdown
+    id: pillar
+    attributes:
+      label: Pillar
+      description: Which pillar does this indicator belong to?
+      options:
+        - Awareness
+        - Policy & Data Protection
+        - Training
+        - Tools
+        - Evidence
+        - Governance
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Maturity Level
+      description: Which maturity level is this indicator currently at?
+      options:
+        - "Level 1 — Exploring (0-25)"
+        - "Level 2 — Developing (26-50)"
+        - "Level 3 — Implementing (51-75)"
+        - "Level 4 — Optimizing (76-100)"
+    validations:
+      required: true
+  - type: textarea
+    id: current-indicator
+    attributes:
+      label: Current Indicator Text
+      description: Copy the indicator text as it appears in STANDARD.md
+    validations:
+      required: true
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: Issue Type
+      options:
+        - Indicator is unclear or ambiguous
+        - Indicator is at the wrong maturity level
+        - Indicator is missing (should be added)
+        - Indicator is redundant (should be removed or merged)
+    validations:
+      required: true
+  - type: textarea
+    id: proposed-change
+    attributes:
+      label: Proposed Change
+      description: Describe what the indicator should say or where it should be placed
+    validations:
+      required: true
+  - type: textarea
+    id: rationale
+    attributes:
+      label: Rationale
+      description: Why should this change be made? Reference regulatory guidance, enforcement practice, or practical experience if possible.
+    validations:
+      required: true

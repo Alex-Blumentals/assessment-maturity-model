@@ -1,0 +1,44 @@
+name: Level Boundary
+description: Propose adjusting the boundary between maturity levels or the compliance floor
+title: "[Boundary] "
+labels: ["level-boundary"]
+body:
+  - type: dropdown
+    id: boundary
+    attributes:
+      label: Which boundary?
+      options:
+        - "Exploring / Developing (currently 25)"
+        - "Developing / Implementing (currently 50)"
+        - "Implementing / Optimizing (currently 75)"
+        - "Compliance floor (currently ~52)"
+    validations:
+      required: true
+  - type: input
+    id: current-value
+    attributes:
+      label: Current threshold value
+      placeholder: "e.g., 52"
+    validations:
+      required: true
+  - type: input
+    id: proposed-value
+    attributes:
+      label: Proposed threshold value
+      placeholder: "e.g., 48"
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting Evidence
+      description: What evidence supports this adjustment? Include references to regulatory guidance, enforcement decisions, empirical data, or assessment results.
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact Assessment
+      description: How would this change affect organisations currently assessed under the standard?
+    validations:
+      required: true

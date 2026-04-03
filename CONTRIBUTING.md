@@ -26,7 +26,7 @@ If new Commission guidance, enforcement decisions, or harmonised standards affec
 
 ## What we won't change
 
-- The six-pillar structure (unless overwhelming evidence warrants restructuring — major version change)
+- The seven-pillar structure (unless overwhelming evidence warrants restructuring — major version change)
 - The CC BY-SA 4.0 license
 - The competence-specific focus (this is not a governance or risk framework)
 

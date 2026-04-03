@@ -1,12 +1,12 @@
-# Twin Ladder Assessment Maturity Model v1.0
+# Twin Ladder Assessment Maturity Model v1.1
 
-**Six-Pillar Rubric for AI Literacy and Competence Assessment**
+**Seven-Pillar Rubric for AI Literacy and Competence Assessment**
 
-Framework Version: 1.0.0 | License: CC BY-SA 4.0 | TwinLadder Research
+Framework Version: 1.1.0 | License: CC BY-SA 4.0 | TwinLadder Research
 
 ## Overview
 
-This document defines the detailed maturity model for the Twin Ladder Assessment framework's six pillars: **Awareness, Policy & Data Protection, Training, Tools, Evidence, and Governance**. Each pillar is evaluated across four maturity stages:
+This document defines the detailed maturity model for the Twin Ladder Assessment framework's seven pillars: **Awareness, Policy & Data Protection, Training, Tools, Evidence, Governance, and Authority Delegation & Decision Boundaries**. Each pillar is evaluated across four maturity stages:
 
 | Stage | Score Range | Label |
 |-------|------------|-------|
@@ -37,7 +37,7 @@ Twin Ladder is the only framework that is simultaneously:
 1. **Competence-specific** — centres entirely on individual and organisational AI competence, not governance, risk management, or technical safety
 2. **Article 4-native** — purpose-built for the EU AI Act's literacy obligation, not retrofitted from a broader governance model
 3. **Open-source** — released under CC BY-SA 4.0; free to adopt, adapt, and redistribute
-4. **Individual + organisational** — assesses both per-person competence (Levels 0-3) and organisational maturity (six-pillar scoring), producing evidence for both Article 4 and ISO 42001 Clause 7.2
+4. **Individual + organisational** — assesses both per-person competence (Levels 0-3) and organisational maturity (seven-pillar scoring), producing evidence for both Article 4 and ISO 42001 Clause 7.2
 5. **Workflow-based** — measures practical competence through task appropriateness, output verification, and risk judgment, not technical knowledge testing
 
 No other framework reviewed — from ISO 42001 to Gartner's five-level model to MITRE's twenty-dimension assessment — combines all five characteristics. Most frameworks treat competence as one dimension among many; Twin Ladder makes it the entire methodology.
@@ -356,26 +356,87 @@ Strategic governance function with board visibility. Ethics review has authority
 
 ---
 
+## Pillar 7: Authority Delegation & Decision Boundaries
+
+**Weight:** ~0.14 (1/7) | **Expert Standard:** 50
+
+**What this measures:** How well the organisation defines, documents, and monitors the boundaries of AI decision-making authority. This pillar assesses whether delegation of decisions to AI systems is explicit, bounded, monitored, and reversible.
+
+### Level 1 — Exploring (0-25)
+No formal mapping of where AI systems make or influence decisions. Authority delegation is implicit and undocumented.
+
+**Indicators:**
+1. No decision inventory exists
+2. AI systems operate with default vendor configurations
+3. Nobody can identify where AI makes autonomous decisions vs assists humans
+4. No escalation paths defined for situations outside AI authority boundaries
+5. Authority boundaries not discussed at any governance level
+6. No consideration of whether AI decision scope has changed since initial deployment
+
+**Threshold:** Organisation cannot identify which decisions are made or influenced by AI. No documented authority boundaries for any AI system.
+
+### Level 2 — Developing (26-50)
+Organisation has begun identifying where AI makes decisions. Initial awareness of authority delegation risks.
+
+**Indicators:**
+1. Partial decision inventory for highest-risk systems
+2. Some documentation of where AI output is used without human review
+3. Leadership aware that authority delegation is a governance gap
+4. Basic escalation paths defined for critical systems
+5. Some stakeholders aware they interact with AI-assisted decisions
+6. Initial assessment of delegation risk for highest-profile AI systems
+
+**Threshold:** 50% of high-risk AI decision points identified. Leadership can articulate authority delegation as a governance concern.
+
+### Level 3 — Implementing (51-75)
+Structured authority boundary documentation. Decision inventory maintained. Escalation paths operational.
+
+**Indicators:**
+1. Complete decision inventory covering all AI systems
+2. Documented authority boundaries (what the AI may decide, what requires human approval)
+3. Operational escalation paths with named owners
+4. Human override capability verified for high-risk systems
+5. Stakeholder awareness of decision scope — affected persons know when AI influences decisions about them
+6. Delegation risk assessment conducted for each AI system with documented proportionality reasoning
+
+**Threshold:** All AI systems have documented authority boundaries. Escalation paths tested and operational. Human override verified for high-risk decisions.
+
+### Level 4 — Optimizing (76-100)
+Proactive authority governance. Continuous monitoring for authority creep. Board-level visibility.
+
+**Indicators:**
+1. Authority creep monitoring with automated alerts when AI systems exceed delegated scope
+2. Regular authority boundary reviews (quarterly minimum) with documented outcomes
+3. Accountability chains documented end-to-end — for every AI-assisted decision, the responsible human is identifiable
+4. Board reporting on AI decision scope changes
+5. Organisation contributes to sector authority delegation standards
+6. Independence between AI systems and the governance mechanisms that oversee them
+
+**Threshold:** 90%+ of AI systems under active authority monitoring. Board receives quarterly reports on delegation scope. Authority creep incidents detected and resolved proactively.
+
+---
+
 ## Pillar Weight Rationale
 
-The six pillars are weighted as follows:
+The seven pillars are weighted as follows:
 
 | Pillar | Weight |
 |--------|--------|
-| Awareness | 0.15 |
-| Policy & Data Protection | 0.20 |
-| Training | 0.20 |
-| Tools | 0.15 |
-| Evidence | 0.15 |
-| Governance | 0.15 |
+| Awareness | ~0.14 |
+| Policy & Data Protection | ~0.14 |
+| Training | ~0.14 |
+| Tools | ~0.14 |
+| Evidence | ~0.14 |
+| Governance | ~0.14 |
+| Authority Delegation | ~0.14 |
 
-**Why approximately equal weighting?**
+**Why equal weighting?**
 
-All six pillars are necessary; none alone is sufficient. An organisation with excellent training but no policy is not compliant. An organisation with comprehensive governance but no evidence cannot demonstrate compliance. Article 4 does not prioritise any dimension over others — it requires "measures" (plural) addressing literacy holistically.
+All seven pillars are necessary; none alone is sufficient. An organisation with excellent training but no policy is not compliant. An organisation with comprehensive governance but no evidence cannot demonstrate compliance. An organisation with strong governance but no clarity on which decisions AI is making has a structural blind spot. Article 4 does not prioritise any dimension over others — it requires "measures" (plural) addressing literacy holistically.
 
-Training and Policy & Data Protection receive slightly higher weight (0.20 each) because they represent the most directly actionable compliance measures. Training is the primary mechanism for building the "sufficient level of AI literacy" that Article 4 demands. Policy & Data Protection defines the boundaries within which AI may be used and addresses the GDPR intersection that European organisations cannot ignore.
+With the addition of Authority Delegation in v1.1, the weighting has been equalised across all seven pillars (~0.14 each, i.e. 1/7). The v1.0 slight overweighting of Training and Policy (0.20 each) has been retired in favour of uniform distribution. This reflects the recognition that authority delegation is as fundamental to AI competence as any other pillar — an organisation that cannot identify where AI makes decisions cannot meaningfully claim compliance with any other pillar.
 
-These weights reflect the initial calibration of the standard. They may be adjusted by the Standard Governance Board based on enforcement practice data, national competent authority guidance, and empirical evidence from assessment deployments. Any weight adjustment will follow the public comment process described in the Versioning & Governance section.
+These weights reflect the current calibration of the standard. They may be adjusted by the Standard Governance Board based on enforcement practice data, national competent authority guidance, and empirical evidence from assessment deployments. Any weight adjustment will follow the public comment process described in the Versioning & Governance section.
 
 ---
 
@@ -396,6 +457,10 @@ Pillars do not exist in isolation. Maturity in one pillar often depends on matur
 | **Evidence** | Training | Evidence of competence requires a training programme that produces assessable results. |
 | **Governance** | Policy | Governance enforces and reviews policy; without policy, governance has nothing to govern. |
 | **Governance** | Evidence | Governance decisions require evidence of current state; without evidence, governance is uninformed. |
+| **Authority Delegation** | Tools | You cannot map decision boundaries for AI systems you have not inventoried. Tool discovery precedes authority mapping. |
+| **Authority Delegation** | Governance | Authority boundaries must be embedded in governance structures; without governance, delegation is unaccountable. |
+| **Authority Delegation** | Policy | Authority boundaries operationalise policy rules; without policy, delegation has no framework. |
+| **Governance** | Authority Delegation | Governance oversight requires visibility into what AI systems are authorised to decide; without authority mapping, governance is incomplete. |
 
 ### Anomaly Detection Rules
 
@@ -408,6 +473,9 @@ When pillar scores are inconsistent with the dependency matrix, the assessment s
 | Awareness < 25, Policy > 50 | Policy exists but no one understands the landscape it governs | Policy may be aspirational rather than operational |
 | Training < 25, Evidence > 50 | Evidence of competence without a training programme | Evidence may consist of policy documents only, not competence records |
 | Tools < 25, Governance > 50 | Governing AI without knowing what AI is deployed | Governance may be performative rather than substantive |
+| Tools < 25, Authority Delegation > 50 | Mapping decision boundaries without knowing what AI exists | Authority boundaries likely incomplete or aspirational |
+| Authority Delegation < 25, Governance > 50 | Governance without knowing what AI is authorised to decide | Governance cannot oversee what it cannot see |
+| Policy < 25, Authority Delegation > 50 | Authority boundaries defined without policy framework | Delegation rules lack enforceable foundation |
 
 **Tolerance threshold:** A difference of more than 40 points between dependent pillars (where the dependency scores lower) should trigger manual review. A difference of more than 50 points should be flagged as a likely measurement error.
 
@@ -415,9 +483,10 @@ When pillar scores are inconsistent with the dependency matrix, the assessment s
 
 An organisation's compliance posture is only as strong as its weakest pillar. Sophisticated training cannot compensate for absent governance. Comprehensive evidence cannot substitute for missing policy. This principle has practical consequences:
 
-- An organisation scoring 80 across five pillars but 20 on Tools has a **systemic blind spot** — it does not know what AI systems are in use, making all other pillars unreliable.
-- An organisation scoring 70 across five pillars but 15 on Evidence **cannot demonstrate compliance** — regardless of actual competence, it will fail a regulatory inquiry.
-- An organisation scoring 65 across five pillars but 10 on Governance **lacks accountability** — no one is responsible for ensuring the other pillars function as a system.
+- An organisation scoring 80 across six pillars but 20 on Tools has a **systemic blind spot** — it does not know what AI systems are in use, making all other pillars unreliable.
+- An organisation scoring 70 across six pillars but 15 on Evidence **cannot demonstrate compliance** — regardless of actual competence, it will fail a regulatory inquiry.
+- An organisation scoring 65 across six pillars but 10 on Governance **lacks accountability** — no one is responsible for ensuring the other pillars function as a system.
+- An organisation scoring 75 across six pillars but 5 on Authority Delegation **cannot articulate what AI decides** — without knowing where authority has been delegated, oversight is performative.
 
 The weighted overall score may mask these vulnerabilities. The Lowest-Pillar Principle ensures they surface.
 
@@ -460,7 +529,7 @@ The Strategic Layer answers: *Are we compliant? Where should we invest? How do w
 **Cadence:** Monthly review; post-assessment update
 
 **Metrics:**
-1. **Per-pillar scores** — six individual scores with level classification (Exploring / Developing / Implementing / Optimizing)
+1. **Per-pillar scores** — seven individual scores with level classification (Exploring / Developing / Implementing / Optimizing)
 2. **Gap analysis** — for each pillar, the specific indicators not yet satisfied and the distance to the next maturity level
 3. **Training recommendations** — prioritised list of training interventions by department and role, derived from pillar scores and dependency analysis
 4. **Implementation roadmap** — sequenced action plan respecting cross-pillar dependencies (e.g., complete tool inventory before attempting evidence portfolio)
@@ -498,21 +567,21 @@ The Operational Layer answers: *Where am I? What should I learn next? Can I demo
 
 The following matrix maps each operative phrase of Article 4 to the Twin Ladder pillars it engages. **P** indicates the primary pillar; **S** indicates a secondary pillar.
 
-| Article 4 Phrase | Awareness | Policy & Data Protection | Training | Tools | Evidence | Governance |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| "Providers and deployers of AI systems" | | | | **P** | | S |
-| "shall take measures" | | | | | S | **P** |
-| "to ensure, to their best extent" | | S | | | **P** | S |
-| "a sufficient level of AI literacy" | **P** | | S | | | |
-| "of their staff and other persons dealing with the operation and use of AI systems on their behalf" | | S | **P** | S | | |
-| "taking into account their technical knowledge, experience, education and training" | S | | **P** | | | |
-| "the context in which the AI systems are to be used, and considering the persons or groups of persons on whom the AI systems are to be used" | **P** | S | | S | | S |
+| Article 4 Phrase | Awareness | Policy & Data Protection | Training | Tools | Evidence | Governance | Authority Delegation |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| "Providers and deployers of AI systems" | | | | **P** | | S | S |
+| "shall take measures" | | | | | S | **P** | S |
+| "to ensure, to their best extent" | | S | | | **P** | S | |
+| "a sufficient level of AI literacy" | **P** | | S | | | | S |
+| "of their staff and other persons dealing with the operation and use of AI systems on their behalf" | | S | **P** | S | | | |
+| "taking into account their technical knowledge, experience, education and training" | S | | **P** | | | | |
+| "the context in which the AI systems are to be used, and considering the persons or groups of persons on whom the AI systems are to be used" | **P** | S | | S | | S | **P** |
 
 **Key findings from the mapping:**
 - Every pillar is engaged by at least two operative elements. No pillar is redundant.
-- The heaviest regulatory burden falls on **Awareness** (2 primary mappings), **Training** (2 primary), **Evidence** (1 primary, enabling factor throughout), and **Governance** (1 primary, enabling factor throughout).
+- The heaviest regulatory burden falls on **Awareness** (2 primary mappings), **Training** (2 primary), **Authority Delegation** (1 primary — the "context of use" and "affected persons" phrase directly requires understanding of AI decision boundaries), **Evidence** (1 primary, enabling factor throughout), and **Governance** (1 primary, enabling factor throughout).
 - The "staff and other persons" phrase extends the obligation beyond employees to contractors, consultants, temporary workers, and outsourced service providers.
-- The "context of use" and "affected persons" phrases make one-size-fits-all training legally insufficient.
+- The "context of use" and "affected persons" phrases make one-size-fits-all training legally insufficient. They also require organisations to understand where AI makes decisions that affect people — the core of Authority Delegation.
 
 For the full line-by-line analysis including ambiguity notes, GDPR intersection mapping, and compliance floor justification, see the companion document: [ARTICLE4-MAPPING.md](ARTICLE4-MAPPING.md).
 
@@ -524,9 +593,9 @@ For the full line-by-line analysis including ambiguity notes, GDPR intersection 
 
 | Field | Value |
 |-------|-------|
-| **Version** | 1.0.0 |
+| **Version** | 1.1.0 |
 | **License** | CC BY-SA 4.0 |
-| **Published** | 2026-03-08 |
+| **Published** | 2026-04-03 |
 | **Next scheduled review** | August 2026 (aligned with Article 4 enforcement commencement) |
 
 ### Review Cadence

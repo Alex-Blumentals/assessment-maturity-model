@@ -1,14 +1,14 @@
 # EU AI Act Article 4 -- Twin Ladder Assessment Maturity Model Mapping
 
 **Decision Record** | Date: 2026-03-08 | Status: Reference Document
-**Framework Version:** Twin Ladder v1.0.0 (CC BY-SA 4.0)
+**Framework Version:** Twin Ladder v1.1.0 (CC BY-SA 4.0)
 
 ---
 
 ## Table of Contents
 
 1. [Article 4 Full Text and Legislative Context](#1-article-4-full-text-and-legislative-context)
-2. [Line-by-Line Mapping to Six Pillars](#2-line-by-line-mapping-to-six-pillars)
+2. [Line-by-Line Mapping to Seven Pillars](#2-line-by-line-mapping-to-seven-pillars)
 3. [GDPR Intersection Mapping](#3-gdpr-intersection-mapping)
 4. [Gap Analysis](#4-gap-analysis)
 5. [Compliance Floor Justification](#5-compliance-floor-justification)
@@ -67,7 +67,7 @@ Recital 20 provides the legislative intent behind Article 4:
 
 ---
 
-## 2. Line-by-Line Mapping to Six Pillars
+## 2. Line-by-Line Mapping to Seven Pillars
 
 ### 2.1 Phrase-by-Phrase Analysis
 
@@ -82,7 +82,7 @@ Article 4 is a single sentence containing seven distinct operative elements. Eac
 | Mapping | Detail |
 |---------|--------|
 | **Primary pillar** | **Tools** -- organisation must know which AI systems it operates |
-| **Secondary pillar** | **Governance** -- accountability must cover both provider and deployer obligations |
+| **Secondary pillars** | **Governance** -- accountability must cover both provider and deployer obligations; **Authority Delegation** -- identifying systems requires understanding what authority each has been granted |
 | **Maturity threshold** | Implementing (51+): complete AI systems inventory with role assignments |
 | **Observable evidence** | AI systems register with owner, classification (provider/deployer), and date of deployment |
 | **Ambiguity** | The boundary between "provider" and "deployer" for customised AI solutions (e.g., fine-tuned models) is not fully resolved. Organisations that customise GPAI models may be both. |
@@ -96,7 +96,7 @@ Article 4 is a single sentence containing seven distinct operative elements. Eac
 | Mapping | Detail |
 |---------|--------|
 | **Primary pillar** | **Governance** -- active measures require governance structures to initiate, fund, and oversee |
-| **Secondary pillar** | **Evidence** -- measures must be documented to be demonstrable |
+| **Secondary pillars** | **Evidence** -- measures must be documented to be demonstrable; **Authority Delegation** -- measures must include defining and monitoring AI decision boundaries |
 | **Maturity threshold** | Implementing (51+): documented programme with budget allocation and responsible owner |
 | **Observable evidence** | Board/management decision authorising AI literacy programme; budget line item; named responsible person or team |
 | **Ambiguity** | "Measures" is deliberately broad. The Commission Q&A clarified that a single e-learning module is unlikely sufficient, but did not specify minimum types or frequency of measures. |
@@ -124,7 +124,7 @@ Article 4 is a single sentence containing seven distinct operative elements. Eac
 | Mapping | Detail |
 |---------|--------|
 | **Primary pillar** | **Awareness** -- this is the core demand: people must understand AI systems they interact with |
-| **Secondary pillar** | **Training** -- literacy is built through structured competence programmes, not osmosis |
+| **Secondary pillars** | **Training** -- literacy is built through structured competence programmes, not osmosis; **Authority Delegation** -- sufficient literacy requires understanding where AI has decision-making authority |
 | **Maturity threshold** | Implementing (51+): role-differentiated literacy standards defined and delivered |
 | **Observable evidence** | Role-based competence matrix; training curricula mapped to roles; competence verification results (scenario-based assessments preferred over quizzes) |
 | **Ambiguity** | "Sufficient" is not quantified. The standard is relative to context (see Phrase 6). A data scientist needs different literacy than a receptionist. The absence of a defined curriculum is both a flexibility and a risk -- organisations must make defensible choices about depth. |
@@ -165,29 +165,29 @@ Article 4 is a single sentence containing seven distinct operative elements. Eac
 
 | Mapping | Detail |
 |---------|--------|
-| **Primary pillar** | **Awareness** -- understanding of context-specific risks and impacts |
+| **Primary pillars** | **Awareness** -- understanding of context-specific risks and impacts; **Authority Delegation** -- the "context of use" and "affected persons" phrases directly require understanding of where AI has authority to make or influence decisions about people |
 | **Secondary pillars** | **Policy** -- policies must reflect context-specific requirements; **Governance** -- oversight must account for impact on affected persons; **Tools** -- AI inventory must classify systems by context and impact |
-| **Maturity threshold** | Implementing (51+): AI systems classified by use context and impact level; training content reflects specific use cases and affected populations |
-| **Observable evidence** | AI system risk classification (by use context); impact assessments for systems affecting individuals; context-specific training modules (e.g., "AI in hiring" for HR, "AI in legal research" for legal); records of how affected person considerations influenced literacy programme design |
+| **Maturity threshold** | Implementing (51+): AI systems classified by use context and impact level; training content reflects specific use cases and affected populations; authority boundaries documented for systems affecting individuals |
+| **Observable evidence** | AI system risk classification (by use context); impact assessments for systems affecting individuals; context-specific training modules (e.g., "AI in hiring" for HR, "AI in legal research" for legal); records of how affected person considerations influenced literacy programme design; authority delegation documentation for each AI decision point affecting persons |
 | **Ambiguity** | "Considering the persons or groups of persons on whom the AI systems are to be used" creates a proportionality gradient. AI systems that affect vulnerable populations (welfare recipients, job applicants, patients) demand higher literacy standards than those affecting internal operations. The boundary between "moderate" and "high" impact is left to organisational judgment and will be refined through enforcement. |
 
 ---
 
 ### 2.2 Summary Mapping Matrix
 
-| Article 4 Element | Awareness | Policy | Training | Tools | Evidence | Governance |
-|---|:---:|:---:|:---:|:---:|:---:|:---:|
-| Providers and deployers | | | | **P** | | S |
-| Shall take measures | | | | | S | **P** |
-| To their best extent | | S | | | **P** | S |
-| Sufficient level of AI literacy | **P** | | S | | | |
-| Staff and other persons | | S | **P** | S | | |
-| Technical knowledge, experience... | S | | **P** | | | |
-| Context of use + affected persons | **P** | S | | S | | S |
+| Article 4 Element | Awareness | Policy | Training | Tools | Evidence | Governance | Authority Delegation |
+|---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| Providers and deployers | | | | **P** | | S | S |
+| Shall take measures | | | | | S | **P** | S |
+| To their best extent | | S | | | **P** | S | |
+| Sufficient level of AI literacy | **P** | | S | | | | S |
+| Staff and other persons | | S | **P** | S | | | |
+| Technical knowledge, experience... | S | | **P** | | | | |
+| Context of use + affected persons | **P** | S | | S | | S | **P** |
 
 **P** = Primary pillar, **S** = Secondary pillar
 
-**Key finding:** Every pillar is engaged by at least two operative elements. No pillar is redundant with respect to Article 4. The heaviest burden falls on **Awareness** (2 primary), **Training** (2 primary), **Evidence** (1 primary, appears as enabling factor throughout), and **Governance** (1 primary, appears as enabling factor throughout).
+**Key finding:** Every pillar is engaged by at least two operative elements. No pillar is redundant with respect to Article 4. The heaviest burden falls on **Awareness** (2 primary), **Training** (2 primary), **Authority Delegation** (1 primary — the "context of use" and "affected persons" phrase directly requires understanding of AI decision boundaries), **Evidence** (1 primary, appears as enabling factor throughout), and **Governance** (1 primary, appears as enabling factor throughout).
 
 ---
 
@@ -285,7 +285,7 @@ The BDSG supplements GDPR in Germany with sector-specific provisions. Key inters
 
 ### 4.1 Requirements Adequately Covered
 
-The six-pillar model covers the vast majority of Article 4's requirements:
+The seven-pillar model covers the vast majority of Article 4's requirements:
 
 | Article 4 Requirement | Coverage Assessment |
 |---|---|
@@ -372,7 +372,7 @@ And a policy question:
 | Data protection integration | Minor | Addressed by Policy pillar expansion |
 | Cross-border variation | Minor | Guidance note; no structural change |
 
-**Overall assessment:** The six-pillar model provides **strong structural coverage** of Article 4 requirements. The identified gaps are addressable through question-bank additions (4-5 new questions) and do not require pillar restructuring. The planned expansion of "Policy" to "Policy & Data Protection" addresses the most significant intersection concern.
+**Overall assessment:** The seven-pillar model provides **strong structural coverage** of Article 4 requirements. The identified gaps are addressable through question-bank additions (4-5 new questions) and do not require pillar restructuring. The planned expansion of "Policy" to "Policy & Data Protection" addresses the most significant intersection concern.
 
 ---
 
@@ -507,7 +507,7 @@ At 60, an organisation has a strong, comprehensive programme. This is clearly co
 
 16. **Twin Ladder Methodology v1.0.0** -- framework-version.json; CC BY-SA 4.0.
 
-17. **Question Bank** -- webapp/src/lib/data/question-bank.ts (18 assessment questions across 6 pillars).
+17. **Question Bank** -- webapp/src/lib/data/question-bank.ts (assessment questions across 7 pillars).
 
 18. **"EU AI Act Article 4: The Regulation That Asks Whether Your People Can Handle What You Have Given Them"** -- TwinLadder Research Capstone, February 2026.
 

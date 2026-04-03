@@ -1,4 +1,4 @@
-# Twin Ladder Assessment Maturity Model v1.0
+# Twin Ladder Assessment Maturity Model v1.1
 
 **The open standard for AI competence assessment under EU AI Act Article 4.**
 
@@ -6,9 +6,9 @@
 
 ## What is this?
 
-A six-pillar maturity model for assessing organisational AI competence, designed to operationalise the EU AI Act Article 4 obligation. The model provides:
+A seven-pillar maturity model for assessing organisational AI competence, designed to operationalise the EU AI Act Article 4 obligation. The model provides:
 
-- **6 assessment pillars**: Awareness, Policy & Data Protection, Training, Tools, Evidence, Governance
+- **7 assessment pillars**: Awareness, Policy & Data Protection, Training, Tools, Evidence, Governance, Authority Delegation & Decision Boundaries
 - **4 maturity levels**: Exploring (0-25), Developing (26-50), Implementing (51-75), Optimizing (76-100)
 - **Article 4 compliance floor** at approximately score 52
 - **GDPR integration** for data protection in AI contexts
@@ -19,7 +19,7 @@ A six-pillar maturity model for assessing organisational AI competence, designed
 | Document | Description |
 |----------|-------------|
 | [STANDARD.md](STANDARD.md) | Complete maturity model with pillar definitions, indicators, and scoring methodology |
-| [ARTICLE4-MAPPING.md](ARTICLE4-MAPPING.md) | Line-by-line mapping of EU AI Act Article 4 to the six pillars |
+| [ARTICLE4-MAPPING.md](ARTICLE4-MAPPING.md) | Line-by-line mapping of EU AI Act Article 4 to the seven pillars |
 
 ## Live Resources
 
@@ -46,6 +46,10 @@ See the [competitive landscape analysis](https://twinladder.ai/en/research/asses
 
 **For automated assessment:** Visit [twinladder.ai/assess](https://twinladder.ai/assess) for an AI-powered assessment that scores your organisation against this standard in 15 minutes.
 
+## What's new in v1.1
+
+**Pillar 7: Authority Delegation & Decision Boundaries** — The original six pillars covered awareness, policy, training, tools, evidence, and governance. In practice, a persistent gap emerged: none of them addressed the delegation act itself — the moment a human grants an AI system authority to act, the boundaries of that authority, the escalation paths when boundaries are exceeded, and the ongoing monitoring of whether delegation remains appropriate. Pillar 7 makes this explicit. It measures decision inventory completeness, authority boundary documentation, escalation paths, human override capability, stakeholder awareness, delegation risk assessment, authority creep monitoring, and end-to-end accountability chains. All pillar weights have been recalibrated to equal distribution (~0.14 each).
+
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on proposing changes to the standard.
@@ -57,7 +61,7 @@ This standard is maintained by [Twin Ladder](https://twinladder.ai) as permanent
 ## Citation
 
 ```
-Twin Ladder Assessment Maturity Model v1.0.0
+Twin Ladder Assessment Maturity Model v1.1.0
 Authors: Twin Ladder Research
 License: CC BY-SA 4.0
 URL: https://github.com/twinladder/assessment-maturity-model

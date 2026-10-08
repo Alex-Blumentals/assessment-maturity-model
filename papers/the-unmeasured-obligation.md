@@ -11,6 +11,8 @@
 
 > **Published openly under CC BY-SA 4.0 · October 2026 (open for comment).** A neutral landscape and gap analysis; a companion, interest-declared paper maps the author's own methodology against the properties identified in §7. Current to the **Digital Omnibus on AI (Regulation (EU) 2026/1744)**, in force 27 July 2026: high-risk application dates deferred (Annex III → 2 December 2027; Annex I → 2 August 2028), Article 4 softened to a best-efforts duty to *support the development of* AI literacy, Article 26(2) unchanged.
 
+**Open-access home.** This paper and its companion are published under CC BY-SA 4.0 at **github.com/Alex-Blumentals/assessment-maturity-model/tree/main/papers** — PDFs in the dated release `fellowship-papers-2026-10`.
+
 ---
 
 ## Executive summary
